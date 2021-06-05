@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="{% url 'resultados' %}" method="POST">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        
+    </form>
+
+</body>
+</html>
